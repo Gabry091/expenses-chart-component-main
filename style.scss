@@ -1,0 +1,80 @@
+//* VARIABLES
+
+// primary colors
+$sred: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+
+// neutral colors
+$dbrown: hsl(25, 47%, 15%);
+$mbrown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$vporange: hsl(30, 100%, 87.5%);
+
+// font
+$fs: 18px;
+@import url('https://fonts.googleapis.com/css2? family=DM+Sans:wght@400;700&display=swap');
+
+//* END VARIABLES
+
+*{
+    font-family: 'DM Sans';
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $cream;
+}
+
+#bal{ // orange div
+    background-color: $sred;
+    width: 500px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    transform: translate(-50%);
+    border-radius: 20px;
+
+    #balance{ // total money
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    #t1 { // "my balance"
+        color: white;
+        margin-left: 30px;
+        margin-top: 40px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+
+
+#main{ //white div
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media only screen and (max-width: 768px){
+    #main{
+        position: absolute;
+        bottom: 100px;
+    }
+
+    #bal{
+        
+    }
+}
